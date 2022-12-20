@@ -1,0 +1,9 @@
+public class ReservedStringUsingFunction {
+    public static void main(String[] args) {
+      String inputString = "SakshiMulherkarSalvi";
+      StringBuilder input1 = new StringBuilder();
+      input1.append(inputString);
+      input1.reverse();
+      System.out.println(input1);
+    }
+}
