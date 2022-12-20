@@ -1,0 +1,18 @@
+import java.util.Arrays;
+
+public class Anagram {
+
+  public static void main(String[] args) {
+    String str1 = "army";
+    String str2 = "mary";
+    System.out.println("Check if the firstString and secondString is anagram of each other:" + isAnagram(str1, str2));
+  }
+
+  public static boolean isAnagram(String str1, String str2) {
+    char[] fs = str1.toLowerCase().toCharArray();
+    char[] ss = str2.toLowerCase().toCharArray();
+    Arrays.sort(fs);
+    Arrays.sort(ss);
+    return Arrays.equals(fs, ss);
+  }
+}
