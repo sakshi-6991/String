@@ -1,0 +1,7 @@
+public class StringToInteger{
+    public static void main(String[] args) {
+      String inputString = "12345";
+      int result = Integer.parseInt(inputString);
+      System.out.println(result);
+    }
+}
