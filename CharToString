@@ -1,0 +1,11 @@
+public class CharToString{
+  public static void main(String[] args)
+  {
+    char[] ch={'j','a','v','a','t','p','o','i','n','t'}; 
+    String str = new String(ch);
+    System.out.println("String : "+str);
+    System.out.println("Character : ");
+    for(int i=0;i<ch.length-1;i++)
+      System.out.println(ch[i]);
+  }
+}
