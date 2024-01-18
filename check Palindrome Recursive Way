@@ -1,0 +1,23 @@
+// Recursive Approach For Palindrome Program in Java
+
+
+public class checkPalindromeInRecurssiveWay {
+    public static boolean isPalindrome(int i, int j, String str){
+        if(i>=j){
+            return true;
+        }
+        if(str.charAt(i)!=str.charAt(j)){
+            return false;
+        }
+        return isPalindrome(i+1,j-1,str);
+    }
+    public static boolean isPalindrome(String str){
+        return isPalindrome(0, str.length()-1,str);
+    }
+    public static void main(String[] args) {
+        String str = "GeeksskeeG";
+        String strSecond = "GeeksGeeks";
+        System.out.println(isPalindrome(str));
+        System.out.println(isPalindrome(strSecond));
+    }
+}
