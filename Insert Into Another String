@@ -1,0 +1,18 @@
+//Java String Program to Insert a string into another string
+
+public class InsertIntoAnotherStringUsingStringBuffer{
+    public static String printWords(String original, String insertString, int index){
+        StringBuffer newString = new StringBuffer(original);
+        newString.insert(index+1,insertString);
+        return newString.toString();
+    }
+    public static void main(String[] args) {
+        String s = "GeeksGeeks";
+        String t = "For";
+        int index = 4;
+        System.out.println("original string "+s);
+        System.out.println("String to be inserted "+t);
+        System.out.println("index "+index);
+        System.out.println(printWords(s,t,index));
+    }
+}
